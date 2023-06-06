@@ -4,13 +4,19 @@ import Github from '../../assets/git hub image.png';
 import linkedin from '../../assets/linkedin image.png';
 import Instragram from '../../assets/instragram image.png';
 import Arif2 from '../../assets/ARIF 2.jpg';
+import { themeContext } from './Toggle/Context';
+import { useContext } from 'react';
+
+
 
 const IntroSection = () => {
+    const theme=useContext(themeContext);
+    const darkMode=theme.state.darkMode;
     return (
         <div className='intro'>
             <div className='i-left'>
             <div className='i-name'>
-                <span>Hey! I'm</span>
+                <span style={{color:darkMode? 'white':''}}>Hey! I'm</span>
                 <span>Arif Hossain </span>
                 <span>Mern Developer with 
                      high level of experience in<br></br>
