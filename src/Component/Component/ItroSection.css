@@ -65,9 +65,33 @@ transform: scale(0.5);
 }
 
 .i-right>*{
-    width: 500px;
-    height: 450px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     position: absolute;
     z-index: 1;
+}
+.i-right>img.glasses{
+width: 270px;
+height: 280px;
+}
+.i-right>:nth-child(2){
+    transform: scale(0.2);
+    top: -19%;
+    left: -24%;
+    border-radius: 50%;
+    padding: 0;
+}
+
+.blur{
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: #edd0ff;
+    filter: blur(212px);
+    z-index: -9;
+    top: -18%;
+    left: 56%;
+    filter: blur(72px);
 }
