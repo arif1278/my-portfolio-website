@@ -41,8 +41,8 @@ const IntroSection = () => {
             <div className='i-right'>
                 <img src={Arif2} alt=''></img>
                 <motion.img
-                initial={{left:'-46%'}}
-                whileInView={{left:'-22%'}}
+                initial={{left:'-49%'}}
+                whileInView={{left:'-23%'}}
                 transition={transition}
                 className='glasses' src={glasses} alt='' />
 
@@ -51,15 +51,19 @@ const IntroSection = () => {
                 whileInView={{left:'53%'}}
                 transition={transition}
                 
-                style={{top:'-2%', left:'46%'}}>
-                    <FlotingDiv image={crown} text1='Mern' text2='Stack' text3='Developer'/>
+                style={{top:'-2%', left:'55%'}}
+                className='floating-div'
+                >
+                    <FlotingDiv className='crown' image={crown} text1='Mern' text2='Stack' text3='Developer'/>
                 </motion.div>
                 <motion.div
                 initial={{left:'9rem', bottom:'18rem'}}
                 whileInView={{left:'2rem'}}
                 transition={transition}
                 
-                style={{top:'18rem',left:'0rem'}}>
+                style={{top:'22.5rem',left:'0rem'}}
+                className='floating-div'
+                >
                     <FlotingDiv image={thumb} text1='Best Design' text2='Award'/>
                 </motion.div>
                 <div className='blur' style={{background:'rgb(238 210 255)'}}>

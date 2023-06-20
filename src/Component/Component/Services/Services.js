@@ -7,14 +7,15 @@ import Card from '../Card/Card';
 import Resume from './resume.pdf'
 import { themeContext } from '../Toggle/Context';
 import { useContext } from 'react';
+import { motion } from 'framer-motion';
 
 const Services = () => {
-
+    const transition={duration:1,type:'spring'}
     const theme=useContext(themeContext);
     const darkMode=theme.state.darkMode;
 
     return (
-        <div className='services'>
+        <div className='services' id='Services'>
             {/*left side*/}
             <div className='awesome'>
             <span style={{color:darkMode? 'white':''}}>My Awesome</span>
@@ -33,27 +34,42 @@ const Services = () => {
             </div>
             {/*right side */}
             <div className='cards'>
-             <div style={{left:'25rem'}}>
+             <motion.div
+             whileInView={{left:'14rem'}}
+             initial={{left:'25%'}}
+             transition={transition}
+             
+             style={{left:'25rem'}}>
                 <Card 
                 emoji ={Heart}
                 heading={'Design'}
                 details={'Figma,Sketch,Photoshop,Adobe,Adobi xd'}
                 />
-             </div>
-             <div style={{ top:'16rem',left:' 5rem'}}>
+             </motion.div>
+             <motion.div
+             whileInView={{left:'-5rem'}}
+             initial={{left:'-15%'}}
+             transition={transition}
+             
+             style={{ top:'16rem',left:' 5rem'}}>
                 <Card 
                 emoji ={Glasses}
                 heading={'Developer'}
                 details={'HTML5,CSS3,Javascript,React'}
                 />
-             </div>
-             <div style={{ top:'16rem',left:' 35rem'}}>
+             </motion.div>
+             <motion.div
+             whileInView={{left:'33rem'}}
+             initial={{left:'20rem'}}
+             transition={transition}
+             
+             style={{ top:'16rem',left:' 35rem'}}>
                 <Card 
                 emoji ={Humble}
                 heading={'Full stack developer'}
                 details= {'node.js,express.js,firebase,Mongodb'}
                 />
-             </div>
+             </motion.div>
              
             </div>
             

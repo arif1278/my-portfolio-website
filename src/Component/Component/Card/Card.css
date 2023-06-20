@@ -37,3 +37,9 @@
     color: #5290fd;
     margin-bottom: 1rem;
 }
+
+@media screen and (max-width:4780px){
+    .card{
+        width: auto;
+    }
+}

@@ -7,6 +7,7 @@ import Amazon from '../../../assets/amazon3.png';
 import Facebook from '../../../assets/facebook.png';
 import { themeContext } from '../Toggle/Context';
 import { useContext } from 'react';
+import { motion } from 'framer-motion';
 
 const Works = () => {
     const theme=useContext(themeContext);
@@ -32,7 +33,14 @@ const Works = () => {
             <div className='blur s-blur' style={{background:'#ABF1FF94'}}></div>
             </div>
             <div className='w-right'>
-             <div className='w-mainCircle'>
+             <motion.div
+             initial={{rotate:45}}
+             whileInView={{rotate:0}}
+             viewport={{margin:'-40px'}}
+             
+            transition={{duration:'2',type:'spring'}}
+             
+             className='w-mainCircle'>
                 <div className=' w-secCircle'>
                     <img src={Fiverr} alt='' />
                 </div>
@@ -49,9 +57,9 @@ const Works = () => {
                     <img src={Facebook} alt='' />
                 </div>
 
-             </div>
+             </motion.div>
              {/* background circle */}
-             <div className='w-backCircle blueCircle'></div>
+             <div style={{color:darkMode? 'black':''}} className='w-backCircle blueCircle'></div>
              <div className='w-backCircle yellowCircle'></div>
             </div>
         </div>

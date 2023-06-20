@@ -34,3 +34,12 @@ margin-right: 4rem;
     cursor:pointer;
     color: var(--orange);
 }
+
+@media screen and (max-width:480px){
+    .n-list{
+        display: none;
+    }
+    .n-button{
+        display: none;
+    }
+}

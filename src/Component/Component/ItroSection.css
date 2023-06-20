@@ -80,7 +80,15 @@ height: 280px;
     top: -19%;
     left: -24%;
     border-radius: 50%;
-    padding: 0;
+    padding: 0px;
+}
+.i-right>:nth-child(3){
+    width: 210px;
+    height: 30px;
+}
+.i-right>:nth-child(4){
+    width: 220px;
+    height: 30px;
 }
 
 .blur{
@@ -94,4 +102,25 @@ height: 280px;
     top: -18%;
     left: 56%;
     filter: blur(72px);
+}
+
+@media screen and (max-width:480px){
+    .intro{
+        flex-direction: column;
+        height: 64rem;
+        gap: 7rem;
+    }
+    .i-right{
+        transform: scale(0.8);
+        left: -3rem;
+    }
+    .i-right .blur{
+        display: none;
+    }
+    .floating-div:nth-of-type(1){
+        top:-7rem !important
+    }
+    .i-right>img.glasses{
+        left: -9.5rem !important
+    }
 }
