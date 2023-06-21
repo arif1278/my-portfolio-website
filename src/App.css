@@ -11,7 +11,13 @@
   --smboxShadow:-79px 51px 60px rgba(0,0,0,0.08);
 }
 .App {
-  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .button{

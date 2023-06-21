@@ -32,7 +32,8 @@ const Navbar = () => {
 
                 </div>
                <button className='button'>
-                      Contact
+                <Link spy={true} to='Contact' smooth={true}>Contact</Link>
+                      
                </button>
             </div>
         </div>

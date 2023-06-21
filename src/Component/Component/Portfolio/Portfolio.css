@@ -1,6 +1,6 @@
 .portfolio{
     
-    padding: 0 3rem 0 3rem;
+    padding: 0 6rem 0 6rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,7 +30,7 @@
 }
 
 .portfolio-slider .swiper-slide{
-    width: 20rem;
+    width: 10rem;
 }
 .portfolio img{
     width:19rem;

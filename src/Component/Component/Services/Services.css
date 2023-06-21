@@ -63,4 +63,8 @@
     .cards>*{
         position: static;
     }
+    .awesome{
+        justify-content: center;
+        align-items: center;
+    }
 }

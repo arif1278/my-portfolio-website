@@ -37,9 +37,6 @@ const Portfolio = () => {
             <SwiperSlide>
                 <img src={News} alt='' />
             </SwiperSlide>
-            <SwiperSlide>
-                <img src={Top} alt='' />
-            </SwiperSlide>
             
             
            </Swiper>

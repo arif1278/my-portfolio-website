@@ -41,5 +41,7 @@
 @media screen and (max-width:4780px){
     .card{
         width: auto;
+        justify-content: center;
+        align-items: center;
     }
 }
