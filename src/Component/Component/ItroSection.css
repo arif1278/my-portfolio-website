@@ -30,8 +30,8 @@
 }
 .i-name>:nth-child(3){
     font-weight: 100;
-    font-size: 14px;
-    color: gray;
+    font-size: 20px;
+    color: black;
     margin-top: 10px;
 }
 .i-button{
