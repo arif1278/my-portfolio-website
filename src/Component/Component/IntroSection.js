@@ -121,9 +121,9 @@ const IntroSection = () => {
             loop={Infinity}
             cursor
             cursorStyle='_'
-            typeSpeed={70}
-            deleteSpeed={50}
-            delaySpeed={1000}
+            typeSpeed={100}
+            deleteSpeed={60}
+            delaySpeed={500}
           />
         </span>
             </div>
