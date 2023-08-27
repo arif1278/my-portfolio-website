@@ -3,8 +3,7 @@ import './Portfolio.css';
 import {Swiper,SwiperSlide} from 'swiper/react';
 import Sports from '../../../assets/ARIF 2.jpg'
 import Education from '../../../assets/ARIF 3.jpg'
-import News from '../../../assets/ARIF 3.jpg'
-import Top from '../../../assets/Screenshot_20230601-203344_1 (1).png'
+import News from '../../../assets/FB_IMG_1654190241485.jpg'
 import 'swiper/css'
 import { themeContext } from '../Toggle/Context';
 import { useContext } from 'react';

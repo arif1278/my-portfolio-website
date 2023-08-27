@@ -7,7 +7,7 @@ import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSli
 import Github from '../../assets/git hub image.png';
 import linkedin from '../../assets/linkedin image.png';
 import Instragram from '../../assets/instragram image.png';
-import Arif2 from '../../assets/ARIF 2.jpg';
+import Arif2 from '../../assets/FB_IMG_1654190213746.jpg';
 import crown from '../../assets/crawn image.jpg';
 import thumb from '../../assets/thumb image.jpg';
 import glasses from '../../assets/glasses.png'
@@ -16,6 +16,7 @@ import { useContext } from 'react';
 import FlotingDiv from './FlotingDiv/FlotingDiv';
 import {motion} from 'framer-motion'
 import {Typewriter} from 'react-simple-typewriter'
+import { Link } from 'react-scroll';
 
 
 
@@ -121,14 +122,17 @@ const IntroSection = () => {
             loop={Infinity}
             cursor
             cursorStyle='_'
-            typeSpeed={100}
-            deleteSpeed={60}
-            delaySpeed={500}
+            typeSpeed={50}
+            deleteSpeed={50}
+            delaySpeed={1000}
           />
         </span>
             </div>
             <button className=' button i-button'>
-            Hire me
+                <Link spy={true} to='Contact' smooth={true}>
+                Hire me
+                </Link>
+            
             </button>
             <div className='i-icons'>
                 <a href='https://github.com/arif1278'><img src={Github} alt="" /></a>

@@ -10,6 +10,7 @@ import Contact from './Component/Component/Testimonials/Contact/Contact';
 import Testimonial from './Component/Component/Testimonials/Testimonial';
 import Works from './Component/Component/Works/Works';
 import { themeContext } from './Component/Component/Toggle/Context';
+import About from './Component/Component/About/About';
 
 function App() {
   const theme=useContext(themeContext)
@@ -19,9 +20,12 @@ function App() {
     style={{background:darkMode? 'black':'',
        color:darkMode? 'white':''
   }}
+  
     >
+      
      <Navbar></Navbar>
      <IntroSection></IntroSection>
+     <About></About>
      <Services></Services>
      <Experience></Experience>
      <Works></Works>

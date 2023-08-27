@@ -8,6 +8,7 @@ import Facebook from '../../../assets/facebook.png';
 import { themeContext } from '../Toggle/Context';
 import { useContext } from 'react';
 import { motion } from 'framer-motion';
+import {Link} from 'react-scroll'
 
 const Works = () => {
     const theme=useContext(themeContext);
@@ -17,17 +18,18 @@ const Works = () => {
               <div className='awesome'>
             <span style={{color:darkMode? 'white':''}}>Works for all these</span>
             <span>Brands & Clients</span>
-            <span>lorem ispum is simpley
+            <span>I had a lot of experience  in Amazon,
                 <br/>
-                this is very pretty call her
+                Shopify, Upwork, Fiver, Facebook,
                 <br/>
-                this is very softly who im find
-                <br/>
-                angkara is very bad for me
+                development sector, even if it was a small job.
                 <br/>
             </span>
             <button className='button s-button'>
-              Hire me
+                <Link spy={true} to='Contact' smooth={true}> 
+                Hire me
+                </Link>
+              
             </button>
             
             <div className='blur s-blur' style={{background:'#ABF1FF94'}}></div>

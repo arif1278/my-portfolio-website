@@ -20,9 +20,11 @@ const Services = () => {
             <div className='awesome'>
             <span style={{color:darkMode? 'white':''}}>My Awesome</span>
             <span>services</span>
-            <span>lorem ispum is simpley
+            <span>React is very much efficient because it creates a virtual 
                 <br/>
-                this is very pretty call her
+                DOM rather than directly building it in actual DOM.
+                <br/>
+                React helps in organising our code faster and easier.
             </span>
             <a href={Resume} download>
             <button className='button s-button'>
