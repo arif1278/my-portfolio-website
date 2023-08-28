@@ -1,14 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import  './About.css'
 import bangladesh from'../../../assets/flag.jpg'
 import Phone from'../../../assets/phone.jpg'
 import Location from'../../../assets/location.png'
 import Message from'../../../assets/message.jpg'
 import image from '../../../assets/FB_IMG_1654190221544.jpg'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
+
     return (
-        <div className='about' id='About'>
+        <div className='about' id='About' data-aos="fade-up"
+        data-aos-duration="3000">
             <div className='about-heading'>
               <h1>About Myself</h1>
             </div>

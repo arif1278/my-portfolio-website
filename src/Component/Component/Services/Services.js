@@ -8,14 +8,25 @@ import Resume from './resume.pdf'
 import { themeContext } from '../Toggle/Context';
 import { useContext } from 'react';
 import { motion } from 'framer-motion';
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
 
 const Services = () => {
+
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+      }, []);
+
     const transition={duration:1,type:'spring'}
     const theme=useContext(themeContext);
     const darkMode=theme.state.darkMode;
 
     return (
-        <div className='services' id='Services'>
+        <div className='services' id='Services' data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
             {/*left side*/}
             <div className='awesome'>
             <span style={{color:darkMode? 'white':''}}>My Awesome</span>

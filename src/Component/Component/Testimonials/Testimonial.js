@@ -10,8 +10,20 @@ import 'swiper/css/pagination'
 import 'swiper/css'
 import { themeContext } from '../Toggle/Context';
 import { useContext } from 'react';
+import AOS from 'aos';
+import "aos/dist/aos.css"
+import { useEffect } from 'react';
+
+
 
 const Testimonial = () => {
+
+
+    useEffect(()=>{
+        AOS.init();
+        AOS.refresh();
+    },[])
+
     const theme=useContext(themeContext);
     const darkMode=theme.state.darkMode;
    const clients=[
@@ -29,8 +41,10 @@ const Testimonial = () => {
         },
     ]
     return (
-        <div className='t-wrapper' id='Testimonials'>
-            <div className='t-heading'>
+        <div className='t-wrapper' id='Testimonials' data-aos='fade-left'
+        data-aos-duration='3000'>
+            <div className='t-heading' data-aos='fade-down'
+        data-aos-duration='3000'>
             <span >Clients always get</span><br/>
             <span>Exeptional Work</span><br/>
             <span>from me...</span>

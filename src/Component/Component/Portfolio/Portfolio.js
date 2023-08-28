@@ -7,14 +7,25 @@ import News from '../../../assets/FB_IMG_1654190241485.jpg'
 import 'swiper/css'
 import { themeContext } from '../Toggle/Context';
 import { useContext } from 'react';
-
 import 'swiper/swiper-bundle.css'
+import { useEffect } from 'react';
+import AOS from 'aos';
+import "aos/dist/aos.css"
+
 
 const Portfolio = () => {
+
+
+    useEffect(()=>{
+        AOS.init();
+        AOS.refresh();
+    },[])
+
     const theme=useContext(themeContext);
     const darkMode=theme.state.darkMode;
     return (
-        <div className='portfolio' id='Portfolio'>
+        <div className='portfolio' id='Portfolio' data-aos='zoom-out'
+        data-aos-duration='3000'>
             {/* heading */}
             <span style={{color:darkMode?'white':''}}>Recent Project</span>
             <span>Portfolio</span>

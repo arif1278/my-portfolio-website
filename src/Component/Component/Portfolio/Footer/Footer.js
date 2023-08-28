@@ -7,9 +7,22 @@ import Github from '@iconscout/react-unicons/icons/uil-github'
 import Linkedin from '@iconscout/react-unicons/icons/uil-linkedin'
 import Twitter from '@iconscout/react-unicons/icons/uil-twitter'
 
+import { useEffect } from 'react';
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+
 const Footer = () => {
+
+
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+      }, []);
+
     return (
-        <div className='footer'>
+        <div className='footer' data-aos="fade-up"
+        data-aos-duration="3000">
             <img src={footer} alt='' style={{width:'100%'}}/>
             <div className='f-content'>
                <span style={{fontSize:'1rem', padding:'10px',}}>arifhossain199257@gmail.com</span>

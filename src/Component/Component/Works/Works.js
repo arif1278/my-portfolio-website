@@ -9,12 +9,24 @@ import { themeContext } from '../Toggle/Context';
 import { useContext } from 'react';
 import { motion } from 'framer-motion';
 import {Link} from 'react-scroll'
+import { useEffect } from 'react';
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+
 
 const Works = () => {
+
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+      }, []);
+
     const theme=useContext(themeContext);
   const darkMode=theme.state.darkMode;
     return (
-        <div className='works'>
+        <div className='works' data-aos="zoom-in-right"
+        data-aos-duration='3000'>
               <div className='awesome'>
             <span style={{color:darkMode? 'white':''}}>Works for all these</span>
             <span>Brands & Clients</span>

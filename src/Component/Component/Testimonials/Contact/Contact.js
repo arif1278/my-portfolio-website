@@ -4,8 +4,16 @@ import { useRef } from 'react';
 import './Contact.css'
 import { themeContext } from '../../Toggle/Context';
 import { useContext } from 'react';
+import AOS from 'aos';
+import "aos/dist/aos.css"
+import { useEffect } from 'react';
 
 const Contact = () => {
+
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+      }, []);
 
     const theme=useContext(themeContext);
     const darkMode=theme.state.darkMode;
@@ -28,7 +36,8 @@ const Contact = () => {
 
 
     return (
-        <div className='contact-form' id='Contact'>
+        <div className='contact-form' id='Contact' data-aos="zoom-in-up"
+        data-aos-duration='3000'>
             <div className='w-left'>
              <div className='awesome'>
              <span style={{color:darkMode?'white':''}}>Get in touch</span>

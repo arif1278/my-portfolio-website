@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './ItroSection.css';
 import Particles from "react-particles";
 import { useCallback } from "react";
@@ -17,10 +17,17 @@ import FlotingDiv from './FlotingDiv/FlotingDiv';
 import {motion} from 'framer-motion'
 import {Typewriter} from 'react-simple-typewriter'
 import { Link } from 'react-scroll';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 
 const IntroSection = () => {
+
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+      }, []);
 
     const particlesInit = useCallback(async engine => {
         console.log(engine);
@@ -40,7 +47,7 @@ const IntroSection = () => {
     const darkMode=theme.state.darkMode;
     return (
         
-        <div className='intro'>
+        <div className='intro' data-aos="fade-up">
             <Particles
             id="tsparticles"
             init={particlesInit}
