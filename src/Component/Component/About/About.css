@@ -30,3 +30,23 @@
   border: 2px solid black;
   border-radius: 8px;
 }
+
+
+@media screen and (max-width:600px) {
+    .about-section{
+        width: 100%;
+        flex-direction: column;
+
+    }
+    .about-left>p{
+        margin-right: 3rem;
+    }
+    .about-right>img{
+        width: 100%;
+
+        width: 370px;
+        height: 270px;
+        justify-content: center;
+        align-items: center;
+    }
+}

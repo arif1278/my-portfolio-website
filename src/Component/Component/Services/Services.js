@@ -28,7 +28,8 @@ const Services = () => {
         data-aos-easing="linear"
         data-aos-duration="1500">
             {/*left side*/}
-            <div className='awesome'>
+           <div className='services-2'>
+           <div className='awesome'>
             <span style={{color:darkMode? 'white':''}}>My Awesome</span>
             <span>services</span>
             <span>React is very much efficient because it creates a virtual 
@@ -85,6 +86,7 @@ const Services = () => {
              </motion.div>
              
             </div>
+           </div>
             
         </div>
     );

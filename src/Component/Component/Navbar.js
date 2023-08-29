@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Navbar.css';
 import Toggle from './Toggle/Toggle';
 import { Link } from 'react-scroll';
+import {FaBars} from 'react-icons/fa'
+import {ImCross} from 'react-icons/im'
 
 const Navbar = () => {
+
+ const [Mobile,setMobile]=useState(true)
+
     return (
         <div className='n-wrapper'>
             <div className='n-left'>
@@ -11,7 +16,7 @@ const Navbar = () => {
              <Toggle/>
             </div>
             <div className='n-right'>
-                <div className='n-list'>
+                <div className=  {Mobile? "n-list" : 'n-list-mobile'}onClick={()=>setMobile(true)}>
                     <ul style={{listStyleType:'none'}}>
                     <Link spy={true} to='Navbar' smooth={true}>
                     <li>Home</li>
@@ -38,6 +43,12 @@ const Navbar = () => {
                 <Link spy={true} to='Contact' smooth={true}>Contact</Link>
                       
                </button>
+               
+            <button className='mobile-meno-icon' onClick={()=>setMobile(!Mobile)}>
+                {Mobile? <ImCross/> : <FaBars/>}
+            <FaBars/>
+            </button>
+            
             </div>
         </div>
     );

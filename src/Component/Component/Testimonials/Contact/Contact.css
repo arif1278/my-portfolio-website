@@ -35,8 +35,9 @@ textarea{
     left: 8rem;
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width:600px){
     .contact-form{
         flex-direction: column;
+        margin-bottom: 30px;
     }
 }

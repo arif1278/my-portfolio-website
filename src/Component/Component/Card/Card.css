@@ -38,10 +38,10 @@
     margin-bottom: 1rem;
 }
 
-@media screen and (max-width:4780px){
+@media screen and (max-width:600px){
     .card{
-        width: auto;
-        justify-content: center;
-        align-items: center;
+        display: flex;
+        width: 240px;
+        height: 180px;
     }
 }

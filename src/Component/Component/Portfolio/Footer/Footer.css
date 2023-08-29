@@ -24,3 +24,10 @@
     display: flex;
     gap: 2rem;
 }
+
+/* @media screen and(max-width:600px) {
+    .footer{
+        margin-top: 7rem;
+        padding: 12px;
+    }
+} */
